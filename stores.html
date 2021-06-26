@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Xbox | 非官方网站</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&&type=webgl&ak=Wgli95ebu726R3G66OfyfiIG4ix2MdYf"></script>
+</head>
+<body >
+
+  <!-- Start your project here-->
+  <!--Main Navigation-->
+  <header id="head">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container smooth-scroll ">
+        <a class="navbar-brand" onclick="window.open('https://www.xbox.com/zh-CN/')">
+          <img src="img/20logo.png" height="50" >
+        </a>
+        <button class="navbar-toggler green collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarTogglerDemo02" >
+            <ul class="navbar-nav mr-auto ">
+              <li class="nav-item">
+                <a class="nav-link active text-dark waves-effect waves-light "  onclick="window.location.href='/index.html'" >首页</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark waves-effect waves-light" onclick="window.location.href='/consoles.html'">主机家族</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark waves-effect waves-light" onclick="window.location.href='/fittings.html'">配件</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark waves-effect waves-light  font-weight-bold" href="#head">门店信息</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark waves-effect waves-light" onclick="window.location.href='/conviction.html'">品牌信念</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark waves-effect waves-light" onclick="window.location.href='/summary.html'">《Web应用基础》课程结业报告</a>
+              </li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Full Page Intro -->
+    
+    <div class="view">
+        <picture class="img-responsive">
+          <source media="(min-width: 992px)" srcset="img/Stores/location.jpg" >
+          <source media="(min-width: 500px)" srcset="img/Stores/location.jpg">
+          <img src="img/Stores/location.jpg" class="img-responsive" width="100%" alt="defult picture">
+        </picture>
+        <!-- Mask & flexbox options-->
+        <div class="mask  d-flex center-block align-items-center">
+          <!-- Content -->
+          <div class="container px-md-3 px-sm-0">
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+              <!--Grid column-->
+              <div class="col-lg-12  black-text center-block text-center wow fadeIn">
+                <h1  style="color: rgb(255, 255, 255);font-weight: 700;font-size: 90px; text-shadow: 10px 10px 25px rgb(0 0 0);">门店信息</h1>
+                <hr class="rgba-white-light my-4 w-75">
+
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Content -->
+        </div>
+
+      </div>
+  <!-- Mask & flexbox options-->
+  <!-- Full Page Intro -->
+  </header>
+
+<main>
+    <section>
+        <div class="container mt-5">
+            <h1 class="text-center font-weight-bold">全国门店</h1>
+            <div class="mt-5 col-lg-12 col-md-12 col-sm-12" id="BaiduMap" style="width: 100%;height: 600px;"></div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="text-center">
+                <h4 class="font-weight-bold ">上海</h4>
+                <p class="grey-text font-weight-light">SHANGHAI<br>-</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                <div class="col mt-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">上海环球港店</h5>
+                      <hr class="grey ml-0 my-3 w-50">
+                      <p class="card-text"><i class="fa fa-location-arrow"></i>上海市普陀区中山北路3300号环球港L1-2W</p>
+                      <p class="card-text"><i class="fa fa-phone"></i>13764685444</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mt-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">上海埃建虹桥天地店</h5>
+                        <hr class="grey ml-0 my-3 w-50">
+                        <p class="card-text"><i class="fa fa-location-arrow"></i>上海市闵行区申长路688号虹桥天地购物中心L507室</p>
+                        <p class="card-text"><i class="fa fa-phone"></i>18616334293</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col mt-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">上海浦建路店</h5>
+                        <hr class="grey ml-0 my-3 w-50">
+                        <p class="card-text"><i class="fa fa-location-arrow"></i>上海市浦东新区浦建路620号苏宁易购微软专区</p>
+                        <p class="card-text"><i class="fa fa-phone"></i>暂无</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col mt-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">上海兰焜太平洋店</h5>
+                        <hr class="grey ml-0 my-3 w-50">
+                        <p class="card-text"><i class="fa fa-location-arrow"></i>上海市徐汇区漕溪北路41号太平洋数码一期1楼163商铺</p>
+                        <p class="card-text"><i class="fa fa-phone"></i>18601656301</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col mt-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">上海兰焜百联世纪大都会店</h5>
+                        <hr class="grey ml-0 my-3 w-50">
+                        <p class="card-text"><i class="fa fa-location-arrow"></i>上海市浦东新区世纪大道1217号百联世纪购物中心1楼112商铺</p>
+                        <p class="card-text"><i class="fa fa-phone"></i>15021905169</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="text-center">
+                <h4 class="font-weight-bold ">重庆</h4>
+                <p class="grey-text font-weight-light">CHONGQING<br>-</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                <div class="col mt-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">重庆观音桥步行街店</h5>
+                      <hr class="grey ml-0 my-3 w-50">
+                      <p class="card-text"><i class="fa fa-location-arrow"></i>重庆市江北区观音桥步行街嘉年华大厦苏宁易购一层微软店</p>
+                      <p class="card-text"><i class="fa fa-phone"></i>18725897964</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mt-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">重庆万象城顺电</h5>
+                        <hr class="grey ml-0 my-3 w-50">
+                        <p class="card-text"><i class="fa fa-location-arrow"></i>重庆市九龙坡区谢家湾万象城L598</p>
+                        <p class="card-text"><i class="fa fa-phone"></i>暂无</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col mt-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">重庆江北赛博店</h5>
+                        <hr class="grey ml-0 my-3 w-50">
+                        <p class="card-text"><i class="fa fa-location-arrow"></i>重庆市江北区观音桥步行街赛博电脑城1F-1001</p>
+                        <p class="card-text"><i class="fa fa-phone"></i>18200121530</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col mt-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">重庆远东百货店</h5>
+                        <hr class="grey ml-0 my-3 w-50">
+                        <p class="card-text"><i class="fa fa-location-arrow"></i>重庆市江北区观音桥步行街远东百货B1层</p>
+                        <p class="card-text"><i class="fa fa-phone"></i>15023112046</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col mt-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">重庆新光天地店</h5>
+                        <hr class="grey ml-0 my-3 w-50">
+                        <p class="card-text"><i class="fa fa-location-arrow"></i>重庆市渝北区红锦大道新光天地6F-48</p>
+                        <p class="card-text"><i class="fa fa-phone"></i>19923163926</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col mt-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">重庆龙湖时代天街店</h5>
+                        <hr class="grey ml-0 my-3 w-50">
+                        <p class="card-text"><i class="fa fa-location-arrow"></i>重庆市渝中区大坪龙湖时代天街D馆L3-C02</p>
+                        <p class="card-text"><i class="fa fa-phone"></i>13368137502</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col mt-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">重庆协信星光店</h5>
+                        <hr class="grey ml-0 my-3 w-50">
+                        <p class="card-text"><i class="fa fa-location-arrow"></i>重庆市南岸区江南大道28号协信星光时代广场1F-ZD09/10</p>
+                        <p class="card-text"><i class="fa fa-phone"></i>17784293902</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+</main>
+  <!--Main layout-->
+
+
+  <footer class="page-footer font-small pt-1">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/profile.php?id=100044963982755" target="_blank">
+            <i class="fab fa-facebook-square"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" href="tencent://message/?uin=2286519101&Site=ww&Menu=yes" target="_blank">
+            <i class="fab fa-qq"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" href="https://github.com/RoureUnder" target="_blank">
+            <i class="fab fa-github"> </i>
+          </a>
+        </li>
+        
+      </ul>
+      <!-- Social buttons -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://github.com/RoureUnder" target="_blank"> RoureUnder</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+ <!-- Your custom scripts (optional) -->
+ <script type="text/javascript">
+    var map = new BMapGL.Map('BaiduMap', {
+    minZoom: 5,
+    maxZoom: 20
+});
+    // 创建地图实例 
+    var point = new BMapGL.Point(106.547454,29.408475);
+    var p2 =new BMapGL.Point(121.642285,38.925192);//苏宁微软体验专区
+    var p3 =new BMapGL.Point(106.562551,29.588326);// 重庆观音桥步行街店
+    var p4 =new BMapGL.Point(104.085321,30.65928);// 成都春熙路店
+    var p5 =new BMapGL.Point(117.106292,36.702788); //济南泉城路店
+    // 创建点坐标 
+    map.centerAndZoom(point, 5);
+    // 初始化地图，设置中心点坐标和地图级别
+    map.enableScrollWheelZoom(true);
+
+	var marker2 = new BMapGL.Marker(p2);  // 创建标注
+	map.addOverlay(marker2);              // 将标注添加到地图中
+	var opts2 = {
+	    width : 200,     // 信息窗口宽度
+	    height: 100,     // 信息窗口高度
+	    title : "苏宁微软体验专区" , // 信息窗口标题
+	    message:"体验专区"
+	}
+	var infoWindow2 = new BMapGL.InfoWindow("地址：大连市沙河口区西安路民勇嘉泰广场苏宁电器2楼微软店", opts2);  // 创建信息窗口对象 
+	marker2.addEventListener("click", function(){
+		map.openInfoWindow(infoWindow2, p2); //开启信息窗口
+    })
+
+    var marker3 = new BMapGL.Marker(p3);  // 创建标注
+	map.addOverlay(marker3);              // 将标注添加到地图中
+	var opts3 = {
+	    width : 200,     // 信息窗口宽度
+	    height: 100,     // 信息窗口高度
+	    title : "重庆观音桥步行街店" , // 信息窗口标题
+	    message:"体验专区"
+	}
+	var infoWindow3 = new BMapGL.InfoWindow("地址：重庆市江北区观音桥步行街嘉年华大厦苏宁易购一层微软店", opts3);  // 创建信息窗口对象 
+	marker3.addEventListener("click", function(){
+		map.openInfoWindow(infoWindow3, p3); //开启信息窗口
+    })
+
+    var marker4 = new BMapGL.Marker(p4);  // 创建标注
+	map.addOverlay(marker4);              // 将标注添加到地图中
+	var opts4 = {
+	    width : 200,     // 信息窗口宽度
+	    height: 100,     // 信息窗口高度
+	    title : "成都春熙路店" , // 信息窗口标题
+	    message:"体验专区"
+	}
+	var infoWindow4 = new BMapGL.InfoWindow("地址：成都市锦江区红星路三段16号苏宁电器二楼", opts4);  // 创建信息窗口对象 
+	marker4.addEventListener("click", function(){
+		map.openInfoWindow(infoWindow4, p4); //开启信息窗口
+    })
+
+    var marker5 = new BMapGL.Marker(p5);  // 创建标注
+	map.addOverlay(marker5);              // 将标注添加到地图中
+	var opts5 = {
+	    width : 200,     // 信息窗口宽度
+	    height: 100,     // 信息窗口高度
+	    title : "济南泉城路店" , // 信息窗口标题
+	    message:"体验专区"
+	}
+	var infoWindow5 = new BMapGL.InfoWindow("地址：济南市泉城路322号惠尔商厦一楼", opts5);  // 创建信息窗口对象 
+	marker5.addEventListener("click", function(){
+		map.openInfoWindow(infoWindow5, p5); //开启信息窗口
+    })
+    </script>
+
+
+</body>
+</html>

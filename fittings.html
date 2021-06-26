@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Xbox | 非官方网站</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+
+  <!-- Start your project here-->
+  <!--Main Navigation-->
+  <header id="head" style="height: auto;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container smooth-scroll ">
+        <a class="navbar-brand" onclick="window.open('https://www.xbox.com/zh-CN/')">
+          <img src="img/20logo.png" height="50" >
+        </a>
+        <button class="navbar-toggler green collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarTogglerDemo02" >
+            <ul class="navbar-nav mr-auto ">
+              <li class="nav-item">
+                <a class="nav-link active text-dark waves-effect waves-light  " onclick="window.location.href='/index.html'">首页</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark waves-effect waves-light" onclick="window.location.href='/consoles.html'">主机家族</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark waves-effect waves-light font-weight-bold"  href="#head">配件</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark waves-effect waves-light" onclick="window.location.href='/stores.html'">门店信息</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark waves-effect waves-light" onclick="window.location.href='/conviction.html'">品牌信念</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark waves-effect waves-light" onclick="window.location.href='/summary.html'">《Web应用基础》课程结业报告</a>
+              </li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <div class="view nineTeenTwenty">
+      <picture>
+        <source srcset="img/Fittings/AllFittings_1920x720.jpg" media="(min-width: 1084px)">
+        <source srcset="img/Fittings/AllFittings_1084x609.jpg" media="(min-width:768px)">
+        <source srcset="img/Fittings/AllFittings_767x431.jpg" media="(min-width:0)">
+        <img class="img-responsive" src="img/Fittings/AllFittings_1920x720.jpg" alt="来自皇家马德里的罗纳尔多和大家握着蓝色和红色的 Xbox 控制器" width="100%">
+    </picture>
+    <!-- Mask & flexbox options-->
+    <div class="mask  d-flex  align-items-center">
+      <!-- Content -->
+      <div class="container px-md-3 px-sm-0 text-center">
+
+        <!--Grid row-->
+        <div class="row wow fadeIn text-lg-right text-md-right text-sm-center ">
+          <!--Grid column-->
+          <div class="col-lg-11 col-md-12 col-sm-12 mb-4   white-text  wow fadeIn">
+            <h1 class="subtext-header mt-2 mb-4">所有配件</h1>
+            <a href="#select"  class="btn btn-green  waves-effect waves-light">
+              立即查看<i class="fa fa-arrow-alt-circle-down"></i>
+            </a>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+  <!-- Full Page Intro -->
+  </header >
+
+<main id="select">
+ 
+<section >
+  <div class="container">
+    <div >
+      <h3 class="text-left font-weight-bold mt-5">筛选依据：</h3>
+    </div>
+    <div class="row">
+      <div class="form-check">
+        <input class="form-check-input " type="checkbox" value="1" id="checkbox1"  onclick="checkAll()">
+        <label class="form-check-label" for="checkbox1" id="allSelect">
+          全部选择
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="2" id="checkbox2" name="checkbox" onclick="showResult()">
+        <label class="form-check-label" for="checkbox2">
+          控制器和遥控器
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="3" id="checkbox3" name="checkbox" onclick="showResult()">
+        <label class="form-check-label" for="checkbox3">
+          方向盘和游戏杆(暂无)
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="4" id="checkbox4" name="checkbox" onclick="showResult()">
+        <label class="form-check-label" for="checkbox4">
+          支架
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="5" id="checkbox5" name="checkbox" onclick="showResult()">
+        <label class="form-check-label" for="checkbox5">
+          Windows10
+        </label>
+      </div>
+
+    </div>
+    <hr>
+  </div>
+
+  <div class="container">
+    <h3 class="font-weight-bold ">您的选择：<label id="yourChoices" class="font-size-small"></label></h3>
+  </div>
+
+  <div class="container-fluid" id="Controller" style="display: none;" name="toShow">
+    <hr class="green" width="100%">
+    <h1 class="text-center font-weight-bold">
+      控制器和遥控器
+    </h1>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <picture>
+            <source srcset="img/Fittings/ControllerYellow.jpg" media="(min-width:0)">
+            <img class="col-lg-12"  srcset="img/Fittings/ControllerYellow.jpg" src="img/Fittings/ControllerYellow.jpg" alt="无线控制器（电光黄）2021" ></picture>
+          <div >
+            <h5 class="font-weight-bold">无线控制器（电光黄）2021</h5>
+            <p class="font-weight-light mt-3">￥暂时未售</p>
+            <p><a onclick="window.open('https://www.xbox.com/zh-CN/accessories/controllers/xbox-wireless-controller')" href="#"class="green-text font-weight-bold" >查看详情
+              <i class="fa fa-arrow-alt-circle-right"></i></a> </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <picture>
+            <source srcset="img/Fittings/ControllerRed.jpg" media="(min-width:0)">
+            <img class="col-lg-12" srcset="img/Fittings/ControllerRed.jpg" src="img/Fittings/ControllerRed.jpg" alt="无线控制器（锦鲤红）2020" width="100%">
+          </picture>
+          <div class="text-left">
+            <h5 class="font-weight-bold">无线控制器（锦鲤红）2020</h5>
+            <p class="font-weight-light mt-3">￥459.00</p>
+            <p><a onclick="window.open('https://www.xbox.com/zh-CN/accessories/controllers/xbox-wireless-controller')" href="#"class="green-text font-weight-bold" >查看详情
+              <i class="fa fa-arrow-alt-circle-right"></i></a> </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <picture>
+            <source srcset="img/Fittings/ControllerWhite.jpg" media="(min-width:0)">
+            <img class="col-lg-12"srcset="img/Fittings/ControllerWhite.jpg" src="img/Fittings/ControllerWhite.jpg" alt="无线控制器（冰雪白）2020" >
+          </picture>
+          <div >
+            <h5 class="font-weight-bold">无线控制器（冰雪白）2020</h5>
+            <p class="font-weight-light mt-3">￥419.00</p>
+            <p><a onclick="window.open('https://www.xbox.com/consoles/experience')" href="#"class="green-text font-weight-bold" >查看详情
+              <i class="fa fa-arrow-alt-circle-right"></i></a> </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <picture>
+            <source srcset="img/Fittings/ControllerBlue.jpg" media="(min-width:0)">
+            <img class="col-lg-12"srcset="img/Fittings/ControllerBlue.jpg" src="img/Fittings/ControllerBlue.jpg" alt="无线控制器（锦鲤红）2020" >
+          </picture>
+          <div >
+            <h5 class="font-weight-bold">无线控制器（波动蓝）2020</h5>
+            <p class="font-weight-light mt-3">￥459.00</p>
+            <p><a onclick="window.open('https://www.xbox.com/zh-CN/accessories/controllers/xbox-wireless-controller')" href="#"class="green-text font-weight-bold" >查看详情
+              <i class="fa fa-arrow-alt-circle-right"></i></a> </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <picture>
+            <source srcset="img/Fittings/SpecialController.jpg" media="(min-width:0)">
+            <img class="col-lg-12"srcset="img/Fittings/SpecialController.jpg" src="img/Fittings/SpecialController.jpg" alt="无线控制器（锦鲤红）2020" >
+          </picture>
+          <div >
+            <h5 class="font-weight-bold">微软 Xbox 无障碍控制器</h5>
+            <p class="font-weight-light mt-3">￥799.00</p>
+            <p><a onclick="window.open('https://www.xbox.com/zh-CN/xbox-one/accessories/controllers/xbox-adaptive-controller')" href="#"class="green-text font-weight-bold" >查看详情
+              <i class="fa fa-arrow-alt-circle-right"></i></a> </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <picture>
+            <source srcset="img/Fittings/ControllerGirlWhite.jpg" media="(min-width:0)">
+            <img class="col-lg-12"srcset="img/Fittings/ControllerGirlWhite.jpg" src="img/Fittings/ControllerGirlWhite.jpg" alt="无线控制器（锦鲤红）2020" >
+          </picture>
+          <div >
+            <h5 class="font-weight-bold">Xbox 无线控制器 – 女武神</h5>
+            <p class="font-weight-light mt-3">￥暂时未售</p>
+            <p><a onclick="window.open('https://www.xbox.com/zh-cn/accessories/controllers/sport-white-special-edition')" href="#"class="green-text font-weight-bold" >查看详情
+              <i class="fa fa-arrow-alt-circle-right"></i></a> </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <picture>
+            <source srcset="img/Fittings/ControllerRedWireless.jpg" media="(min-width:0)">
+            <img class="col-lg-12"srcset="img/Fittings/ControllerRedWireless.jpg" src="img/Fittings/ControllerRedWireless.jpg" alt="无线控制器（锦鲤红）2020" >
+          </picture>
+          <div >
+            <h5 class="font-weight-bold">Xbox 无线控制器 + Windows 10 适用的无线适配器黑色</h5>
+            <p class="font-weight-light mt-3">￥588.00</p>
+            <p><a onclick="window.open('https://www.microsoftstore.com.cn/xbox/microsoft-xbox-controller+wireless-adapter-for-windows10')" href="#"class="green-text font-weight-bold" >查看详情
+              <i class="fa fa-arrow-alt-circle-right"></i></a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="SteeringWheel" style="display: none;" name="toShow">
+    <hr class="green" width="100%">
+    <h1 class="text-center font-weight-bold">
+      方向盘和游戏杆(暂无在售)
+    </h1>
+    <div class="container mt-5">
+      <div class="row">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="Stand" style="display: none;" name="toShow">
+    <hr class="green" width="100%">
+    <h1 class="text-center font-weight-bold">
+      支架
+    </h1>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <picture>
+            <source srcset="img/Fittings/Stand.jpg" media="(min-width:0)">
+            <img class="col-lg-12"  srcset="img/Fittings/Stand.jpg" src="img/Fittings/Stand.jpg" alt="无线控制器（电光黄）2021" ></picture>
+          <div>
+            <h5 class="font-weight-bold">Xbox One S 直立支架</h5>
+            <p class="font-weight-light mt-3">￥179.00</p>
+            <p><a onclick="window.open('https://www.microsoftstore.com.cn/accessories/xbox-one-s-vertical-stand')" href="#"class="green-text font-weight-bold" >查看详情
+              <i class="fa fa-arrow-alt-circle-right"></i></a> </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+  <!--Main layout-->
+
+
+  <footer class="page-footer font-small pt-1">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/profile.php?id=100044963982755" target="_blank">
+            <i class="fab fa-facebook-square"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" href="tencent://message/?uin=2286519101&Site=ww&Menu=yes" target="_blank">
+            <i class="fab fa-qq"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" href="https://github.com/RoureUnder" target="_blank">
+            <i class="fab fa-github"> </i>
+          </a>
+        </li>
+
+      </ul>
+      <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://github.com/RoureUnder" target="_blank"> RoureUnder</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+ <!-- Your custom scripts (optional) -->
+ <script type="text/javascript">
+  window.onload = function(){
+    document.getElementById('checkbox1').checked=true;
+    checkAll();
+  }
+
+  var choices=["控制器和遥控器","方向盘和游戏杆","支架","Windows10"];
+  var checkboxes=document.getElementsByName("checkbox");//所有的复选框
+  var toShow=document.getElementsByName("toShow");//所有的复选框
+  var all=document.getElementById('checkbox1');
+  var checkAll = function(){
+      if(all.checked)//被选上
+      {
+        console.log("现在是需要进行全选操作");
+        for(var i=0;i<checkboxes.length;i++)
+        {
+          checkboxes[i].checked=true;
+          if(i<3){
+          toShow[i].style.display="block";
+        }
+        }
+        document.getElementById("yourChoices").innerHTML = "取消全部选择";
+        all.checked=true;
+      }
+      else{
+        console.log("现在需要进行取消全选");
+        for(var i=0;i<checkboxes.length;i++)
+        {
+          checkboxes[i].checked=false;
+          if(i<3){
+          toShow[i].style.display="none";}
+        }
+        document.getElementById("allSelect").innerHTML = "全部选择";
+        all.checked=false;
+      }
+      showResult();
+  }
+  var showResult = function(){
+    var text="";
+    var selected=0;
+    if(all.checked)
+    {
+      all.checked=false;
+      document.getElementById("allSelect").innerHTML = "全部选择";
+    }
+    for(var i=0;i<checkboxes.length;i++)
+    {
+      if(checkboxes[i].checked)//被选上
+      {
+        text+=choices[i]+" ";
+        selected++;
+        if(i<3){
+        toShow[i].style.display="block";}
+      }
+      else{
+        if(i<3)
+        toShow[i].style.display="none";
+      }
+    }
+    if(selected==checkboxes.length)
+    {
+      document.getElementById("yourChoices").innerHTML = "全部选择";
+      all.checked=true;
+    }
+    else{
+      document.getElementById("yourChoices").innerHTML = text;
+    }
+  }
+</script>
+
+</body>
+</html>
